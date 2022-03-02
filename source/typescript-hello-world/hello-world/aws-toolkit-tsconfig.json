@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "typeRoots": [
+          "/home/oem/work/paradox/localstack/source/typescript-hello-world/hello-world/node_modules/@types"
+        ],
+        "types": [
+          "node"
+        ],
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "/home/oem/work/paradox/localstack/source/typescript-hello-world/hello-world/aws-toolkit-ts-output",
+        "rootDir": ".",
+        "sourceRoot": "/home/oem/work/paradox/localstack/source/typescript-hello-world/hello-world",
+        "sourceMap": true
+    }
+}

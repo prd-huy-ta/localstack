@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: aws-toolkit-ts-output/app.lambdaHandler
+      CodeUri: /home/oem/work/paradox/localstack/source/typescript-hello-world/hello-world
+      Runtime: nodejs14.x
+      Architectures:
+        - x86_64
