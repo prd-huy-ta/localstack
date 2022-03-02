@@ -1,4 +1,4 @@
-import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
+import { APIGatewayProxyEvent, APIGhuytatestatewayProxyResult } from 'aws-lambda';
 
 /**
  *

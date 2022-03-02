@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  huylambda
+
+  Sample SAM Template for huylambda
+
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  HuyTaLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambda/built
+      Handler: app.handler
+      Runtime: nodejs14.x
+      Architectures:
+        - x86_64
+      Policies:
+        - AmazonDynamoDBFullAccess
