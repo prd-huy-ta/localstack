@@ -13,7 +13,7 @@
     "sourceMap": true
   },
   "include": [
-    "ts/*"
+    "handlers/**/*"
   ],
   "exclude": [
     "**/*.spec.ts"

@@ -1,0 +1,40 @@
+{
+    "Roles": [
+        {
+            "Path": "/",
+            "RoleName": "huyta-GenenrateS3SignedUrlLamb-77956693",
+            "RoleId": "7wvpq6ugd8ywmyv85d8n",
+            "Arn": "arn:aws:iam::000000000000:role/huyta-GenenrateS3SignedUrlLamb-77956693",
+            "CreateDate": "2022-03-04T02:12:36.318000+00:00",
+            "AssumeRolePolicyDocument": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Action\": [\"sts:AssumeRole\"], \"Effect\": \"Allow\", \"Principal\": {\"Service\": [\"lambda.amazonaws.com\"]}}]}",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "huyta-SimpleLambdaRole-900f8f84",
+            "RoleId": "r1d71dtp2obiyua4pgem",
+            "Arn": "arn:aws:iam::000000000000:role/huyta-SimpleLambdaRole-900f8f84",
+            "CreateDate": "2022-03-04T02:12:36.552000+00:00",
+            "AssumeRolePolicyDocument": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Action\": [\"sts:AssumeRole\"], \"Effect\": \"Allow\", \"Principal\": {\"Service\": [\"lambda.amazonaws.com\"]}}]}",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "huyta-ResizeImageLambdaRole-32a2517e",
+            "RoleId": "470p76us2wayrsw25aa2",
+            "Arn": "arn:aws:iam::000000000000:role/huyta-ResizeImageLambdaRole-32a2517e",
+            "CreateDate": "2022-03-04T02:12:36.772000+00:00",
+            "AssumeRolePolicyDocument": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Action\": [\"sts:AssumeRole\"], \"Effect\": \"Allow\", \"Principal\": {\"Service\": [\"lambda.amazonaws.com\"]}}]}",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "huyta-ImageHandlerLambdaRole-d1f54fbb",
+            "RoleId": "ipqajfa90ps8za9711uq",
+            "Arn": "arn:aws:iam::000000000000:role/huyta-ImageHandlerLambdaRole-d1f54fbb",
+            "CreateDate": "2022-03-04T02:12:36.990000+00:00",
+            "AssumeRolePolicyDocument": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Action\": [\"sts:AssumeRole\"], \"Effect\": \"Allow\", \"Principal\": {\"Service\": [\"lambda.amazonaws.com\"]}}]}",
+            "MaxSessionDuration": 3600
+        }
+    ]
+}

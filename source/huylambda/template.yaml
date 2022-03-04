@@ -7,16 +7,71 @@ Description: >
 
 Globals:
   Function:
-    Timeout: 3
+    Timeout: 120
 
 Resources:
-  HuyTaLambda:
+  GenenrateS3SignedUrlLambda:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: lambda/built
-      Handler: app.handler
+      CodeUri: lambda/built/generate_signed_s3_url
+      Handler: handler.handler
       Runtime: nodejs14.x
       Architectures:
         - x86_64
       Policies:
-        - AmazonDynamoDBFullAccess
+        - Statement:
+            - Sid: GenenrateS3SignedUrlLambdaS3Policy
+              Effect: Allow
+              Action:
+                - s3:*
+              Resource: 'arn:aws:s3:::huytatest/*'
+
+  SimpleLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambda/built/simple
+      Handler: handler.handler
+      Runtime: nodejs14.x
+      Architectures:
+        - x86_64
+      Policies:
+        - Statement:
+            - Sid: SimpleLambdaS3Policy
+              Effect: Allow
+              Action:
+                - s3:*
+              Resource: 'arn:aws:s3:::huytatest/*'
+
+  ResizeImageLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambda/built/resize-images
+      Handler: handler.imageResizeHandler
+      Runtime: nodejs14.x
+      Architectures:
+        - x86_64
+      Policies:
+        - Statement:
+            - Sid: ResizeImageLambdaS3Policy
+              Effect: Allow
+              Action:
+                - s3:GetObject
+                - s3:PutObject
+              Resource: 'arn:aws:s3:::huytatest/*'
+
+  ImageHandlerLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambda/built/image-handler
+      Handler: handler.imageHandler
+      Runtime: nodejs14.x
+      Architectures:
+        - x86_64
+      Policies:
+        - Statement:
+            - Sid: ImageHandlerLambdaS3Policy
+              Effect: Allow
+              Action:
+                - s3:GetObject
+                - s3:PutObject
+              Resource: 'arn:aws:s3:::huytatest/*'

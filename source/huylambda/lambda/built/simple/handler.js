@@ -77,4 +77,4 @@ const handler = (event) => __awaiter(void 0, void 0, void 0, function* () {
     return response;
 });
 exports.handler = handler;
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=handler.js.map

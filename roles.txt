@@ -1,0 +1,254 @@
+{
+    "Roles": [
+        {
+            "Path": "/aws-service-role/ops.apigateway.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAPIGateway",
+            "RoleId": "AROARTNLNZ3DLGK4OUU5B",
+            "Arn": "arn:aws:iam::110418054854:role/aws-service-role/ops.apigateway.amazonaws.com/AWSServiceRoleForAPIGateway",
+            "CreateDate": "2022-03-02T02:34:38+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ops.apigateway.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "The Service Linked Role is used by Amazon API Gateway.",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/aws-service-role/dynamodb.application-autoscaling.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForApplicationAutoScaling_DynamoDBTable",
+            "RoleId": "AROARTNLNZ3DHM2TH2UZI",
+            "Arn": "arn:aws:iam::110418054854:role/aws-service-role/dynamodb.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_DynamoDBTable",
+            "CreateDate": "2022-03-02T04:52:28+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "dynamodb.application-autoscaling.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/aws-service-role/support.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForSupport",
+            "RoleId": "AROARTNLNZ3DGR6NZPIRB",
+            "Arn": "arn:aws:iam::110418054854:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+            "CreateDate": "2022-02-26T09:44:55+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "support.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "Enables resource access for AWS to provide billing, administrative and support services",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/aws-service-role/trustedadvisor.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForTrustedAdvisor",
+            "RoleId": "AROARTNLNZ3DJDLABZO2Z",
+            "Arn": "arn:aws:iam::110418054854:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+            "CreateDate": "2022-02-26T09:44:55+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "trustedadvisor.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "Access for the AWS Trusted Advisor Service to help reduce cost, increase performance, and improve security of your AWS environment.",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/service-role/",
+            "RoleName": "hello-world-role-a71wmmac",
+            "RoleId": "AROARTNLNZ3DHLZCLWREF",
+            "Arn": "arn:aws:iam::110418054854:role/service-role/hello-world-role-a71wmmac",
+            "CreateDate": "2022-03-01T09:36:15+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "huyta-GenenrateS3SignedUrlLambdaRole-6JVLY8OP6L1W",
+            "RoleId": "AROARTNLNZ3DMV3BOFUBK",
+            "Arn": "arn:aws:iam::110418054854:role/huyta-GenenrateS3SignedUrlLambdaRole-6JVLY8OP6L1W",
+            "CreateDate": "2022-03-03T07:39:48+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "huyta-ImageHandlerLambdaRole-19QHEZJA1R6JY",
+            "RoleId": "AROARTNLNZ3DEIU2AEEZM",
+            "Arn": "arn:aws:iam::110418054854:role/huyta-ImageHandlerLambdaRole-19QHEZJA1R6JY",
+            "CreateDate": "2022-03-03T09:53:40+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "huyta-ResizeImageLambdaRole-1C91RNS55OPH1",
+            "RoleId": "AROARTNLNZ3DNZWRYVCRP",
+            "Arn": "arn:aws:iam::110418054854:role/huyta-ResizeImageLambdaRole-1C91RNS55OPH1",
+            "CreateDate": "2022-03-03T07:39:49+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "huyta-SimpleLambdaRole-J0XW3QS4A52Z",
+            "RoleId": "AROARTNLNZ3DOEDGSPMYT",
+            "Arn": "arn:aws:iam::110418054854:role/huyta-SimpleLambdaRole-J0XW3QS4A52Z",
+            "CreateDate": "2022-03-03T07:39:48+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "siht-BackEndImageHandlerCloudFrontApiGatewayLambda-11X2J8O3UIMSB",
+            "RoleId": "AROARTNLNZ3DHMUWQ2TQM",
+            "Arn": "arn:aws:iam::110418054854:role/siht-BackEndImageHandlerCloudFrontApiGatewayLambda-11X2J8O3UIMSB",
+            "CreateDate": "2022-03-02T04:25:13+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "apigateway.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "siht-BackEndImageHandlerFunctionRoleABF81E5C-114C6RMIXWIT0",
+            "RoleId": "AROARTNLNZ3DISSNCFXEV",
+            "Arn": "arn:aws:iam::110418054854:role/siht-BackEndImageHandlerFunctionRoleABF81E5C-114C6RMIXWIT0",
+            "CreateDate": "2022-03-02T04:25:13+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "siht-CommonResourcesCustomResourcesCustomResourceR-12CE52YX2TVYE",
+            "RoleId": "AROARTNLNZ3DLRLRDRB3B",
+            "Arn": "arn:aws:iam::110418054854:role/siht-CommonResourcesCustomResourcesCustomResourceR-12CE52YX2TVYE",
+            "CreateDate": "2022-03-02T04:25:13+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "",
+            "MaxSessionDuration": 3600
+        }
+    ]
+}

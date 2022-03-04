@@ -1,4 +1,4 @@
-import {APIGatewayProxyEvent, APIGatewayProxyResult} from "aws-lambda";
+import {APIGatewayProxyEvent, APIGatewayProxyResult} from 'aws-lambda';
 import {DynamoDB} from "@aws-sdk/client-dynamodb";
 import S3 from "aws-sdk/clients/s3";
 import sharp from "sharp";

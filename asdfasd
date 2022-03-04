@@ -1,14 +1,14 @@
 setup localstack (api gateway, s3, lambda, dynamoDB)  ok
-test lamba + s3 (doc ly thuyet) + dynamoDB + step function
-aws serverless image handler build, deploy thu chay the nao
+test lamba + s3 (doc ly thuyet) + dynamoDB + step function ok
+aws serverless image handler build, deploy thu chay the nao ok
 
-sharpJS + lamba + typescript
+sharpJS + lamba + typescript ok
 
 setup local stack with pycharm + sam
 setup lamba from trigger + event source (s3 update, api gateway call)
 ranh ranh chay cai media converter ti
 
-
+S3 + lambda + sdk local
 
 
 authorization + gen s3 signed + dynamoDB save data about the request

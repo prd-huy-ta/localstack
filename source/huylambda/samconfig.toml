@@ -2,9 +2,9 @@ version = 0.1
 [default]
 [default.deploy]
 [default.deploy.parameters]
-stack_name = "huylambda"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-65rn2cwl7kef"
-s3_prefix = "huylambda"
+stack_name = "huyta"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-a13357b2"
+s3_prefix = "huyta"
 region = "us-east-1"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"

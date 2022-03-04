@@ -1,0 +1,100 @@
+{
+    "Functions": [
+        {
+            "FunctionName": "huyta-GenenrateS3SignedUrlLamb-9f0127df",
+            "FunctionArn": "arn:aws:lambda:us-east-1:000000000000:function:huyta-GenenrateS3SignedUrlLamb-9f0127df",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::000000000000:role/huyta-GenenrateS3SignedUrlLamb-77956693",
+            "Handler": "handler.handler",
+            "CodeSize": 26144439,
+            "Description": "",
+            "Timeout": 120,
+            "LastModified": "2022-03-04T02:12:37.103+0000",
+            "CodeSha256": "ClMMFHOVK4Asmcyzu8c5CCaVuP6re/7YSzTaM7xqAxQ=",
+            "Version": "$LATEST",
+            "VpcConfig": {},
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "238ade5f-fe1f-444e-8409-50e0bb56ba78",
+            "State": "Active",
+            "LastUpdateStatus": "Successful",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ]
+        },
+        {
+            "FunctionName": "huyta-SimpleLambda-245f3c37",
+            "FunctionArn": "arn:aws:lambda:us-east-1:000000000000:function:huyta-SimpleLambda-245f3c37",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::000000000000:role/huyta-SimpleLambdaRole-900f8f84",
+            "Handler": "handler.handler",
+            "CodeSize": 26144957,
+            "Description": "",
+            "Timeout": 120,
+            "LastModified": "2022-03-04T02:12:38.698+0000",
+            "CodeSha256": "y4CQJqIkKSlphohAuC8ekVpxtL+NuAVvsqd/ytOpRyY=",
+            "Version": "$LATEST",
+            "VpcConfig": {},
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "6e5233a7-7374-4823-96b4-5124d4301837",
+            "State": "Active",
+            "LastUpdateStatus": "Successful",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ]
+        },
+        {
+            "FunctionName": "huyta-ResizeImageLambda-53e13a08",
+            "FunctionArn": "arn:aws:lambda:us-east-1:000000000000:function:huyta-ResizeImageLambda-53e13a08",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::000000000000:role/huyta-ResizeImageLambdaRole-32a2517e",
+            "Handler": "handler.imageResizeHandler",
+            "CodeSize": 26144997,
+            "Description": "",
+            "Timeout": 120,
+            "LastModified": "2022-03-04T02:12:40.311+0000",
+            "CodeSha256": "p0TRIt3fIut+5F/DAQFrnZBnldP5kBpr+uGoBMI045A=",
+            "Version": "$LATEST",
+            "VpcConfig": {},
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "80e421fb-e55b-465a-85f1-4107fb876406",
+            "State": "Active",
+            "LastUpdateStatus": "Successful",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ]
+        },
+        {
+            "FunctionName": "huyta-ImageHandlerLambda-918efbe9",
+            "FunctionArn": "arn:aws:lambda:us-east-1:000000000000:function:huyta-ImageHandlerLambda-918efbe9",
+            "Runtime": "nodejs14.x",
+            "Role": "arn:aws:iam::000000000000:role/huyta-ImageHandlerLambdaRole-d1f54fbb",
+            "Handler": "handler.imageHandler",
+            "CodeSize": 26145486,
+            "Description": "",
+            "Timeout": 120,
+            "LastModified": "2022-03-04T02:12:41.885+0000",
+            "CodeSha256": "jcsThyUIppw+93o99tvxsw5TL253CwaV3FLuObvnzRU=",
+            "Version": "$LATEST",
+            "VpcConfig": {},
+            "TracingConfig": {
+                "Mode": "PassThrough"
+            },
+            "RevisionId": "5f24b0da-aad9-49dd-8db6-81e3cafee45d",
+            "State": "Active",
+            "LastUpdateStatus": "Successful",
+            "PackageType": "Zip",
+            "Architectures": [
+                "x86_64"
+            ]
+        }
+    ]
+}
