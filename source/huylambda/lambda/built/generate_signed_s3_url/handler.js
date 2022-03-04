@@ -17,7 +17,7 @@ const handler = (event) => __awaiter(void 0, void 0, void 0, function* () {
     let params = { Bucket: 'huytatest', Key: 'test.csv' };
     let s3Client;
     const command = new client_s3_1.PutObjectCommand(params);
-    s3Client = new client_s3_1.S3Client({ "endpoint": "http://localhost:4566" });
+    s3Client = new client_s3_1.S3Client({ "endpoint": "http://localhost:4566", "region": 'us-east-1' });
     const url = yield (0, s3_request_presigner_1.getSignedUrl)(s3Client, command, { expiresIn: 3600 });
     console.log('The URL is', url);
     response = {

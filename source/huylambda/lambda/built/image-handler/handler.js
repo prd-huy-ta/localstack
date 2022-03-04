@@ -20,8 +20,12 @@ const imageHandler = (event) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const SUPPORTED_OUTPUT = ['jpg', 'jpeg', 'png'];
         const params = event.queryStringParameters || {};
+        console.log('----------------------------------');
         if (!params.Bucket || !params.Key) {
             throw new Error('You must specify a Bucket and a Key!');
+        }
+        if ((!params.width && !params.height) || !params.format) {
+            throw new Error('You must specify an operation!');
         }
         const inputLocationParams = {
             Bucket: params.Bucket,
@@ -33,7 +37,15 @@ const imageHandler = (event) => __awaiter(void 0, void 0, void 0, function* () {
             format: params.format || undefined
         };
         let newName = params.Key.split('.')[0];
-        const client = new client_s3_1.S3Client({});
+        const client = new client_s3_1.S3Client({
+        // region: 'us-east-1',
+        // endpoint: 'host.docker.internal:4566',
+        // credentials: {
+        //     accessKeyId: 'S3RVER',
+        //     secretAccessKey: 'S3RVER'
+        // },
+        // forcePathStyle: true
+        });
         const command = new client_s3_1.GetObjectCommand(inputLocationParams);
         const imageObject = yield client.send(command);
         const stream = imageObject.Body;
@@ -44,26 +56,22 @@ const imageHandler = (event) => __awaiter(void 0, void 0, void 0, function* () {
             stream.once('error', reject);
         });
         const image = yield streamToBuffer(stream);
-        console.log('1');
         let editedImage = (0, sharp_1.default)(image);
-        console.log('2');
-        console.log(imageParams);
-        console.log(imageParams.width != undefined && imageParams.height != undefined);
         if (imageParams.width != undefined && imageParams.height != undefined) {
             editedImage = editedImage.resize({
                 height: parseInt(imageParams.height),
                 width: parseInt(imageParams.width),
             });
-            console.log('3');
             newName = newName + imageParams.height + 'x' + imageParams.width;
         }
-        // if (imageParams.format && SUPPORTED_OUTPUT.includes(imageParams.format)) {
-        //     let format = imageParams.format
-        //     editedImage = editedImage.toFormat(format as keyof (FormatEnum))
-        //     newName = newName + '.' + imageParams.format
-        // } else {
-        newName = newName + '.' + params.Key.split('.')[1];
-        // }
+        if (imageParams.format && SUPPORTED_OUTPUT.includes(imageParams.format)) {
+            let format = imageParams.format;
+            editedImage = editedImage.toFormat(format);
+            newName = newName + '.' + imageParams.format;
+        }
+        else {
+            newName = newName + '.' + params.Key.split('.')[1];
+        }
         console.log('4');
         const imageBuffer = yield editedImage.toBuffer();
         console.log('-------------------------------------');

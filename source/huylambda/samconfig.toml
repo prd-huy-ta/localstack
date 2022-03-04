@@ -3,10 +3,22 @@ version = 0.1
 [default.deploy]
 [default.deploy.parameters]
 stack_name = "huyta"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-a13357b2"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-65rn2cwl7kef"
 s3_prefix = "huyta"
 region = "us-east-1"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 image_repositories = []
 disable_rollback = true
+
+[4]
+[4.deploy]
+[4.deploy.parameters]
+stack_name = "huyta"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-844fa3ed"
+s3_prefix = "huyta"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = []

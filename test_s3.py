@@ -10,14 +10,14 @@ s3_client = boto3.resource(
 )
  
 # Create bucket
-s3_client.create_bucket(Bucket='mybucket')
+s3_client.create_bucket(Bucket='huytatest')
  
 # upload file to S3
-s3_client.Object('mybucket', 'dev/2019/Outbound_ 15k hello_20190628.csv').put(
-    Body=open('./test.csv', 'rb'), ACL='public-read')
+s3_client.Object('huytatest', 'kremlin.jpg').put(
+    Body=open('./kremlin.jpg', 'rb'), ACL='public-read')
  
 # Get a bucket
-bucket = s3_client.Bucket('mybucket') 
+bucket = s3_client.Bucket('huytatest')
  
 # Get all bucket:
 for key in bucket.objects.all():
